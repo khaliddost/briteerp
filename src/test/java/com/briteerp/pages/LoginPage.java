@@ -27,6 +27,10 @@ public class LoginPage {
     public WebElement wrongMessageDisplay;
 
 
+    @FindBy(xpath = "//*[@id=\"wrapwrap\"]/main/div/form/input[1]")
+    public WebElement blankMessageDisplay;
+
+
     public void login(String userNameStr, String passwordStr) {
         userName.sendKeys(userNameStr);
         password.sendKeys(passwordStr);

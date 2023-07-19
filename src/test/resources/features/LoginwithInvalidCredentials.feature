@@ -1,5 +1,5 @@
 
-@WithInvalidCredentials
+@CompleteTest
 Feature: Login functionality with invalid credentials
   User story: As POS and eventCRM manager, I should be able to Login with valid credentials
 
