@@ -20,14 +20,14 @@ public class LoginPage {
     @FindBy(id="password")
     public WebElement password;
 
-    @FindBy(name = "_submit")
-    public WebElement submit;
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement login;
 
 
     public void login(String userNameStr, String passwordStr) {
         userName.sendKeys(userNameStr);
         password.sendKeys(passwordStr);
-        submit.click();
+        login.click();
         // verification that we logged
     }
 
