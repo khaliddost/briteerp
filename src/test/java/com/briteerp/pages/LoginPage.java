@@ -20,8 +20,11 @@ public class LoginPage {
     @FindBy(id="password")
     public WebElement password;
 
-    @FindBy(name = "_submit")
+    @FindBy(xpath ="//*[@id=\"wrapwrap\"]/main/div/form/div[3]/button")
     public WebElement submit;
+
+    @FindBy(xpath = "//*[@id=\"wrapwrap\"]/main/div/form/p")
+    public WebElement wrongMessageDisplay;
 
 
     public void login(String userNameStr, String passwordStr) {
