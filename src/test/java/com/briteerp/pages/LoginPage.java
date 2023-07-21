@@ -30,6 +30,9 @@ public class LoginPage {
     @FindBy(xpath = "//*[@id=\"wrapwrap\"]/main/div/form/input[1]")
     public WebElement blankMessageDisplay;
 
+    @FindBy(xpath = "//a[@class='button new']")
+    public WebElement plusButton;
+
 
     public void login(String userNameStr, String passwordStr) {
         userName.sendKeys(userNameStr);

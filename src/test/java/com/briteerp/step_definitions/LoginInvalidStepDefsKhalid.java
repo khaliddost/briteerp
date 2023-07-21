@@ -1,7 +1,6 @@
 package com.briteerp.step_definitions;
 
 import com.briteerp.pages.LoginPage;
-import com.briteerp.utilities.BrowserUtils;
 import com.briteerp.utilities.ConfigurationReader;
 import com.briteerp.utilities.Driver;
 import io.cucumber.java.en.And;
@@ -9,9 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-import javax.swing.text.Utilities;
-
-public class LoginInvalidStepDefs {
+public class LoginInvalidStepDefsKhalid {
     LoginPage briteeploginPage = new LoginPage();
         @When("user enter a valid eventCRM manager address")
     public void userEnterAValidEventCRMManagerAddress() {

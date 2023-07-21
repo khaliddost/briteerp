@@ -6,7 +6,7 @@ Feature: Login functionality with valid credentials
 
 
 
-
+@B29G19
   Scenario: login functionality for POS testing
     Given Given user user is on the login page of briteerp application
     When user enter a valid POS email address

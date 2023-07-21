@@ -8,9 +8,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 
-public class LoginValidStepDefs {
+public class LoginValidStepDefsKhalid {
     LoginPage briteeploginPage = new LoginPage();
 
     @Given("Given user user is on the login page of briteerp application")
