@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "@target/rerun.txt",
         glue = "com/briteerp/step_definitions"
 )
-public class FailedTestRunner {
+public class FailedTestRunnerK {
 }
 
 
