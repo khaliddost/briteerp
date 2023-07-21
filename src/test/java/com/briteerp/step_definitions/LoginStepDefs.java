@@ -1,6 +1,6 @@
 package com.briteerp.step_definitions;
 
-import com.briteerp.pages.LoginPage;
+import com.briteerp.pages.US02LoginPage;
 import com.briteerp.utilities.ConfigurationReader;
 import io.cucumber.java.en.Given;
 public class LoginStepDefs {
@@ -28,13 +28,13 @@ public class LoginStepDefs {
             password = ConfigurationReader.getProperty("store_manager_password");
         }
         //send username and password and login
-        new LoginPage().login(username,password);
+        new US02LoginPage().login(username,password);
     }
 
     @Given("the user logged in with username as {string} and password as {string}")
     public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
-      LoginPage loginPage=new LoginPage();
-      loginPage.login(username,password);
+      US02LoginPage US02LoginPage =new US02LoginPage();
+      US02LoginPage.login(username,password);
     }
 
 
