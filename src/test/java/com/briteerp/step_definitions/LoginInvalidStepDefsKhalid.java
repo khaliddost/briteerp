@@ -1,18 +1,18 @@
 package com.briteerp.step_definitions;
 
-import com.briteerp.pages.LoginPage;
-import com.briteerp.utilities.ConfigurationReader;
-import com.briteerp.utilities.Driver;
+import com.briteerp.pages.LoginPageK;
+import com.briteerp.utilities.ConfigurationReaderK;
+import com.briteerp.utilities.DriverK;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class LoginInvalidStepDefsKhalid {
-    LoginPage briteeploginPage = new LoginPage();
+    LoginPageK briteeploginPage = new LoginPageK();
         @When("user enter a valid eventCRM manager address")
     public void userEnterAValidEventCRMManagerAddress() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        DriverK.getDriver().get(ConfigurationReaderK.getProperty("url"));
 
     }
 
@@ -32,7 +32,7 @@ public class LoginInvalidStepDefsKhalid {
 
         Assert.assertEquals("Wrong login/password",wrongMessage);
 
-        Driver.getDriver().quit();
+        DriverK.getDriver().quit();
 
 
 

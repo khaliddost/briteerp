@@ -6,10 +6,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
-public class Driver {
+public class DriverK {
 
     //create a private constructor to remove access to this object
-    private Driver(){}
+    private DriverK(){}
 
     /*
     We make the WebDriver private, because we want to close access from outside the class.
@@ -31,7 +31,7 @@ public class Driver {
             We will read our browserType from configuration.properties file.
             This way, we can control which browser is opened from outside our code.
              */
-            String browserType = ConfigurationReader.getProperty("browser");
+            String browserType = ConfigurationReaderK.getProperty("browser");
 
             /*
             Depending on the browserType returned from the configuration.properties

@@ -1,15 +1,15 @@
 package com.briteerp.pages;
 
 
-import com.briteerp.utilities.Driver;
+import com.briteerp.utilities.DriverK;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPageK {
 
-    public LoginPage(){
-        PageFactory.initElements(Driver.getDriver(), this);
+    public LoginPageK(){
+        PageFactory.initElements(DriverK.getDriver(), this);
     }
 
     @FindBy(id="login")

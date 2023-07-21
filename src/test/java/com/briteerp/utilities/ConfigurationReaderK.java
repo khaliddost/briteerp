@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ConfigurationReader {
+public class ConfigurationReaderK {
 
     //1- Create the Properties object (create object)
     //make it "private" so we are limiting access to the object
