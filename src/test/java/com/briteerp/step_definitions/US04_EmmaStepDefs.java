@@ -19,10 +19,7 @@ public class US04_EmmaStepDefs {
     @Given("user is logged in and on the calendar page of the application")
     public void user_is_logged_in_and_on_the_calendar_page_of_the_application() {
         // Write code here that turns the phrase above into concrete actions
-
-        Driver.getDriver().get("https://qa.briteerp.com/web/login");
-
-        loginPage.login("posmanager36@info.com", "posmanager");
+        loginPage = new LoginPage();
 
         calendarPageEmma.calendarLink.click();
 
@@ -38,13 +35,13 @@ public class US04_EmmaStepDefs {
 
     @When("user enters information in {string} section of pop-up window")
     public void user_enters_information_in_section_of_pop_up_window(String string) {
-      calendarPageEmma.summaryField.sendKeys("meeting");
+        calendarPageEmma.summaryField.sendKeys("meeting");
     }
 
 
     @When("user clicks {string}")
     public void user_clicks(String string) {
-       calendarPageEmma.createButton.click();
+        calendarPageEmma.createButton.click();
     }
 
 
@@ -57,7 +54,7 @@ public class US04_EmmaStepDefs {
 
     @When("user clicks on event in timebox")
     public void user_clicks_on_event_in_timebox() {
-      calendarPageEmma.meetingLink.click();
+        calendarPageEmma.meetingLink.click();
     }
 
 
