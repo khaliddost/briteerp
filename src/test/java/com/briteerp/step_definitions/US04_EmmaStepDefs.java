@@ -26,21 +26,20 @@ public class US04_EmmaStepDefs {
     }
 
 
-    @When("user clicks on timebox for {string} on {string}")
-    public void userClicksOnTimeboxForOn(String arg0, String arg1) {
-
+    @When("user clicks on timebox for All day on sun")
+    public void userClicksOnTimeboxForOn() {
         calendarPageEmma.timeBox.click();
 
     }
 
-    @When("user enters information in {string} section of pop-up window")
-    public void user_enters_information_in_section_of_pop_up_window(String string) {
+    @When("user enters information in summary section of pop-up window")
+    public void user_enters_information_in_section_of_pop_up_window() {
         calendarPageEmma.summaryField.sendKeys("meeting");
     }
 
 
-    @When("user clicks {string}")
-    public void user_clicks(String string) {
+    @When("user clicks Create")
+    public void user_clicks() {
         calendarPageEmma.createButton.click();
     }
 
@@ -61,6 +60,5 @@ public class US04_EmmaStepDefs {
     @Then("user should see pop-up window with event details")
     public void user_should_see_pop_up_window_with_event_details() {
         Assert.assertTrue(calendarPageEmma.meetingDetailsWindow.isDisplayed());
-
     }
 }
