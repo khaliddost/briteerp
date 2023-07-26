@@ -20,6 +20,8 @@ public class US04_EmmaStepDefs {
     public void user_is_logged_in_and_on_the_calendar_page_of_the_application() {
         // Write code here that turns the phrase above into concrete actions
         loginPage = new LoginPage();
+        calendarPageEmma =new CalendarPage_Emma();
+        //need login steps here
 
         calendarPageEmma.calendarLink.click();
 
