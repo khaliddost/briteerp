@@ -25,7 +25,8 @@ public class US04_EmmaStepDefs {
 
         loginPage.login("posmanager36@info.com", "posmanager");
 
-        loginPage.submit.click();
+        loginPage.loginButton.click();
+
         calendarPageEmma.calendarLink.click();
 
     }
