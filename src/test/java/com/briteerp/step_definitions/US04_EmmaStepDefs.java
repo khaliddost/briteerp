@@ -23,6 +23,7 @@ public class US04_EmmaStepDefs {
         calendarPageEmma =new CalendarPage_Emma();
         //need login steps here
 
+        loginPage.loginDynamic("posmanager");
         calendarPageEmma.calendarLink.click();
 
     }

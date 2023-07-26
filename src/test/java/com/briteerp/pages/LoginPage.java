@@ -1,6 +1,7 @@
 package com.briteerp.pages;
 
 
+import com.briteerp.utilities.ConfigurationReader;
 import com.briteerp.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +30,18 @@ public class LoginPage {
         password.sendKeys(passwordStr);
         submit.click();
         // verification that we logged
+    }
+
+    public void loginDynamic(String userType){
+
+        userType = userType.replace(" ","_");
+
+        String username= ConfigurationReader.getProperty(userType + "_username");
+        String password= ConfigurationReader.getProperty(userType + "_password");
+
+        login(username,password);
+
+
     }
 
 }
