@@ -1,7 +1,7 @@
 @calendar
 Feature: Calendar Event Creation Feature
 
-  Background: For all scenarios user is logged into application
+  Background: For all scenarios user is logged into application and on the calendar module of application
     Given user is logged in and on the calendar page of the application
 
   @wip
